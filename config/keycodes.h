@@ -1,7 +1,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-  
+
+// LAYERS
+#define LOWER &mo 1
+#define RAISE &mo 2
+
 // SPECIAL
 #define XXXX &none
 #define ____ &trans
