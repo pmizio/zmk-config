@@ -11,16 +11,16 @@
 
 #define GUI_F &mt LSHFT F
 // Left-hand home row mods
-#define GUI_A  GUI   A
-#define RALT_S RALT  S
-#define CRTL_D CRTL  D
+#define GUI_A  LGUI  A
+#define ALT_S  RALT  S
+#define CTRL_D LCTRL D
 #define SHFT_F LSHFT F
 
 // Right-hand home row mods
 #define SHFT_J   RSHFT J
-#define CRTL_K   CRTL  K
-#define RALT_L   RALT  L
-#define GUI_SEMI GUI   SEMI
+#define CTRL_K   RCTRL K
+#define ALT_L    RALT  L
+#define GUI_SEMI RGUI  SEMI
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -37,9 +37,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &none      &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-   &caps_word GUI_A RALT_S CRTL_D GUI_F  &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none
-   &none      &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
+   &none      &kp Q &kp W &kp E  &kp R  &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+   &caps_word GUI_A ALT_S CTRL_D SHFT_F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none
+   &none      &kp Z &kp X &kp C  &kp V  &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
                   &kp BSPC &mo 1 &kp SPACE   &kp RET &mo 2 &kp ESC
                         >;
                 };
