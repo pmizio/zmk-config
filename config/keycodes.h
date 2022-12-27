@@ -3,8 +3,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // LAYERS
-#define LOWER &mo 1
-#define RAISE &mo 2
+#define LOWER  1
+#define RAISE  2
+#define ADJUST 3
 
 // CUSTOM
 #define CAPSWRD &caps_word
