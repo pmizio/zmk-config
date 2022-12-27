@@ -9,18 +9,17 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define GUI_F &mt LSHFT F
 // Left-hand home row mods
-#define GUI_A  LGUI  A
-#define ALT_S  RALT  S
-#define CTRL_D LCTRL D
-#define SHFT_F LSHFT F
+#define GUI_A  &mt LGUI  A
+#define ALT_S  &mt RALT  S
+#define CTRL_D &mt LCTRL D
+#define SHFT_F &mt LSHFT F
 
 // Right-hand home row mods
-#define SHFT_J   RSHFT J
-#define CTRL_K   RCTRL K
-#define ALT_L    RALT  L
-#define GUI_SEMI RGUI  SEMI
+#define SHFT_J   &mt RSHFT J
+#define CTRL_K   &mt RCTRL K
+#define ALT_L    &mt RALT  L
+#define GUI_SEMI &mt RGUI  SEMI
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
