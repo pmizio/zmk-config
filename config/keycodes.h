@@ -100,6 +100,16 @@
 #define KC_STAR &kp STAR
 #define KC_UNDER &kp UNDER
 
+// MODS
+#define KC_LGUI  &kp LGUI
+#define KC_LALT  &kp LALT
+#define KC_LCTRL &kp LCTRL
+#define KC_LSHFT &kp LSHFT
+#define KC_RGUI  &kp RGUI
+#define KC_RALT  &kp RALT
+#define KC_RCTRL &kp RCTRL
+#define KC_RSHFT &kp RSHFT
+
 // OUTPUTS
 #define USB_BT &out OUT_TOG
 
