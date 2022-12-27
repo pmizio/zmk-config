@@ -1,4 +1,6 @@
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
   
 // SPECIAL
 #define XXXX &none
@@ -77,3 +79,14 @@
 #define KC_SQT &kp SQT
 #define KC_STAR &kp STAR
 #define KC_UNDER &kp UNDER
+
+// OUTPUTS
+#define USB_BT &out OUT_TOG
+
+// BLUETOOTH
+#define BT__CLR &bt BT_CLR
+#define BT_SEL1 &bt BT_SEL 0
+#define BT_SEL2 &bt BT_SEL 1
+#define BT_SEL3 &bt BT_SEL 2
+#define BT_SEL4 &bt BT_SEL 3
+#define BT_SEL5 &bt BT_SEL 4
