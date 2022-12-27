@@ -6,6 +6,21 @@
 #define LOWER &mo 1
 #define RAISE &mo 2
 
+// CUSTOM
+#define CAPSWRD &caps_word
+
+// Left-hand home row mods
+#define GUI_A  &hm LGUI  A
+#define ALT_S  &hm RALT  S
+#define CTRL_D &hm LCTRL D
+#define SHFT_F &hm LSHFT F
+
+// Right-hand home row mods
+#define SHFT_J   &hm RSHFT J
+#define CTRL_K   &hm RCTRL K
+#define ALT_L    &hm RALT  L
+#define GUI_SEMI &hm RGUI  SEMI
+
 // SPECIAL
 #define XXXX &none
 #define ____ &trans
