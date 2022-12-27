@@ -10,22 +10,34 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Left-hand home row mods
-#define GUI_A  &mt LGUI  A
-#define ALT_S  &mt RALT  S
-#define CTRL_D &mt LCTRL D
-#define SHFT_F &mt LSHFT F
+#define GUI_A  &hm LGUI  A
+#define ALT_S  &hm RALT  S
+#define CTRL_D &hm LCTRL D
+#define SHFT_F &hm LSHFT F
 
 // Right-hand home row mods
-#define SHFT_J   &mt RSHFT J
-#define CTRL_K   &mt RCTRL K
-#define ALT_L    &mt RALT  L
-#define GUI_SEMI &mt RGUI  SEMI
+#define SHFT_J   &hm RSHFT J
+#define CTRL_K   &hm RCTRL K
+#define ALT_L    &hm RALT  L
+#define GUI_SEMI &hm RGUI  SEMI
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+    
         keymap {
                 compatible = "zmk,keymap";
 
