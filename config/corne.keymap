@@ -31,6 +31,12 @@
       then-layer = <ADJUST>;
     };
   };
+  
+  macros {
+    ZMK_MACRO(farr,
+      bindings = <KC_EQUAL &kp GT>;
+    )
+  };
     
   keymap {
     compatible = "zmk,keymap";
@@ -69,7 +75,7 @@
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_MINUS KC_EQUAL KC_LBKT  KC_RBKT  KC_BSLH  XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_UNDER KC_PLUS  KC_LBRC  KC_RBRC  KC_PIPE  XXXX
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_UNDER KC_PLUS  KC_LBRC  KC_RBRC  KC_PIPE  &farr
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                     	               ____     ____     KC_UNDER    ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
