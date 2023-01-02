@@ -36,6 +36,9 @@
     ZMK_MACRO(farr,
       bindings = <KC_EQUAL &kp GT>;
     )
+    ZMK_MACRO(tarr,
+      bindings = <KC_MINUS &kp GT>;
+    )
   };
     
   keymap {
@@ -73,9 +76,9 @@
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    XXXX     KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  KC_LPAR  KC_RPAR  XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_MINUS KC_EQUAL KC_LBKT  KC_RBKT  KC_BSLH  XXXX
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_MINUS KC_EQUAL KC_LBKT  KC_RBKT  KC_BSLH  &tarr
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_UNDER KC_PLUS  KC_LBRC  KC_RBRC  KC_PIPE  &farr
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     KC_PLUS  KC_LBRC  KC_RBRC  KC_PIPE  &farr
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                     	               ____     ____     KC_UNDER    ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
