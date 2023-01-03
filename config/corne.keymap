@@ -34,10 +34,16 @@
   
   macros {
     ZMK_MACRO(farr,
-      bindings = <KC_EQUAL &kp GT>;
+      bindings = <KC_EQUAL KC_GT>;
     )
     ZMK_MACRO(tarr,
-      bindings = <KC_MINUS &kp GT>;
+      bindings = <KC_MINUS KC_GT>;
+    )
+    ZMK_MACRO(teq,
+      bindings = <KC_EQUAL KC_EQUAL KC_EQUAL>;
+    )
+    ZMK_MACRO(ddash,
+      bindings = <KC_MINUS KC_MINUS>;
     )
   };
     
@@ -46,7 +52,7 @@
     default_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     KC_Q     KC_W     KC_E     KC_R     KC_T                          KC_Y     KC_U     KC_I     KC_O     KC_P     KC_BSLH
+   KC_TAB   KC_Q     KC_W     KC_E     KC_R     KC_T                          KC_Y     KC_U     KC_I     KC_O     KC_P     KC_BSLH
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    CAPSWRD  GUI_A    ALT_S    CTRL_D   SHFT_F   KC_G                          KC_H     SHFT_J   CTRL_K   ALT_L    GUI_SEMI KC_SQT
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
@@ -74,11 +80,11 @@
     raise_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  KC_LPAR  KC_RPAR  XXXX
+   KC_GRAVE KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  &teq     XXXX     KC_PIPE
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_MINUS KC_EQUAL KC_LBKT  KC_RBKT  KC_BSLH  &tarr
+   KC_TILDE XXXX     KC_LBKT  KC_RBKT  KC_LPAR  KC_RPAR                       &farr    KC_EQUAL KC_MINUS XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     KC_PLUS  KC_LBRC  KC_RBRC  KC_PIPE  &farr
+   XXXX     XXXX     KC_LT    KC_GT    KC_LBRC  KC_RBRC                       &tarr    KC_PLUS  &ddash   XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                     	               ____     ____     KC_UNDER    ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
@@ -88,9 +94,9 @@
     adjust_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
+   REBOOT   KC_F1    KC_F2    KC_F3    KC_F4    KC_F5                         KC_F6    KC_F7    KC_F8    KC_F9    KC_F10   KC_F11
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   BT__CLR  BT_SEL5   BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1                      XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
+   BT__CLR  BT_SEL5   BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1                      XXXX     XXXX     XXXX     XXXX     XXXX     KC_F12
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     USB_BT   XXXX     XXXX     XXXX     XXXX                          XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|

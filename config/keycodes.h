@@ -96,9 +96,28 @@
 #define KC_RET &kp RET
 #define KC_RPAR &kp RPAR
 #define KC_SPACE &kp SPACE
+#define KC_TAB &kp TAB
 #define KC_SQT &kp SQT
 #define KC_STAR &kp STAR
 #define KC_UNDER &kp UNDER
+#define KC_TILDE &kp TILDE
+#define KC_GRAVE &kp GRAVE
+#define KC_GT &kp GT
+#define KC_LT &kp LT
+
+// F KEYS
+#define KC_F1 &kp F1
+#define KC_F2 &kp F2
+#define KC_F3 &kp F3
+#define KC_F4 &kp F4
+#define KC_F5 &kp F5
+#define KC_F6 &kp F6
+#define KC_F7 &kp F7
+#define KC_F8 &kp F8
+#define KC_F9 &kp F9
+#define KC_F10 &kp F10
+#define KC_F11 &kp F11
+#define KC_F12 &kp F12
 
 // MODS
 #define KC_LGUI  &kp LGUI
@@ -120,3 +139,6 @@
 #define BT_SEL3 &bt BT_SEL 2
 #define BT_SEL4 &bt BT_SEL 3
 #define BT_SEL5 &bt BT_SEL 4
+
+// SYSTEM
+#define REBOOT &bootloader
