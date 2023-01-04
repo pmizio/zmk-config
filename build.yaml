@@ -12,10 +12,5 @@
 #     shield: reviung41
 #
 ---
-include:
-  - board: nrfmicro_13
-    shield: corne_left
-  - board: nrfmicro_13
-    shield: corne_right
-  - board: nrfmicro_13
-    shield: settings_reset
+board: [ "nrfmicro_13" ]
+shield: [ "corne_left", "corne_right", "settings_reset" ]
