@@ -27,8 +27,8 @@
   conditional_layers {
     compatible = "zmk,conditional-layers";
     tri_layer {
-      if-layers = <LOWER RAISE>;
-      then-layer = <ADJUST>;
+      if-layers = <_LOWER _RAISE>;
+      then-layer = <_ADJUST>;
     };
   };
   
@@ -58,7 +58,7 @@
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_Z     KC_X     KC_C     KC_V     KC_B                          KC_N     KC_M     KC_COMMA KC_DOT   KC_FSLH  XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                       KC_BSPC &mo LOWER KC_SPACE    KC_RET  &mo RAISE KC_ESC
+                                       KC_BSPC  LOWER    KC_SPACE    KC_RET   RAISE    KC_ESC
 //                                    `--------------------------'  `--------------------------'
       >;
     };
