@@ -76,7 +76,7 @@
     nav_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          &nword   XXXX     XXXX     &pword   XXXX     XXXX
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          &pword   XXXX     XXXX     &nword   XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_LGUI  KC_RALT  KC_LCTRL KC_LSHFT XXXX                          KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
