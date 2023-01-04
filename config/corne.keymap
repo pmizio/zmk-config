@@ -27,7 +27,7 @@
   conditional_layers {
     compatible = "zmk,conditional-layers";
     tri_layer {
-      if-layers = <_LOWER _RAISE>;
+      if-layers = <_NAV _SYMBOL>;
       then-layer = <_ADJUST>;
     };
   };
@@ -68,12 +68,12 @@
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_Z     KC_X     KC_C     KC_V     KC_B                          KC_N     KC_M     KC_COMMA KC_DOT   KC_FSLH  XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                       KC_BSPC  LOWER    NUM_SPACE   KC_RET   RAISE    KC_ESC
+                                       KC_BSPC  NAV       NUM_SPC     KC_RET  SYMBOL   KC_ESC
 //                                    `--------------------------'  `--------------------------'
       >;
     };
         
-    lower_layer {
+    nav_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    XXXX     XXXX     XXXX     &nword     XXXX     XXXX                        XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
@@ -87,7 +87,7 @@
       >;
     };
 
-    raise_layer {
+    symbol_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    KC_GRAVE KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  &teq     XXXX     KC_PIPE
