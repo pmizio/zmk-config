@@ -45,6 +45,16 @@
     ZMK_MACRO(ddash,
       bindings = <KC_MINUS KC_MINUS>;
     )
+    ZMK_MACRO(nword,
+      bindings = <&macro_press KC_LCTRL>
+               , <&macro_tap KC_RIGHT>
+               , <&macro_release KC_LCTRL>;
+    )
+    ZMK_MACRO(pword,
+      bindings = <&macro_press KC_LCTRL>
+               , <&macro_tap KC_LEFT>
+               , <&macro_release KC_LCTRL>;
+    )
   };
     
   keymap {
@@ -66,11 +76,11 @@
     lower_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
+   XXXX     XXXX     XXXX     &nword     XXXX     XXXX                        XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_LGUI  KC_RALT  KC_LCTRL KC_LSHFT XXXX                          KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
+   XXXX     XXXX     XXXX     XXXX     XXXX     &pword                        XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                        ____     ____     ____        ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
