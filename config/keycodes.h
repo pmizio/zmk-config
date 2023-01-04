@@ -5,11 +5,14 @@
 // LAYERS
 #define _LOWER  1
 #define _RAISE  2
-#define _ADJUST 3
+#define _NUMBER 3
+#define _ADJUST 4
 
 #define LOWER  &mo _LOWER
 #define RAISE  &mo _RAISE
 #define ADJUST &mo _ADJUST
+
+#define NUM_SPACE &lt _NUMBER SPACE
 
 // CUSTOM
 #define CAPSWRD &caps_word
