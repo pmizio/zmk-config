@@ -12,7 +12,7 @@
 #define SYMBOL &mo _SYMBOL
 #define ADJUST &mo _ADJUST
 
-#define NUM_SPC &lt _NUMBER SPACE
+#define NAV_SPC &lt _NAV SPACE
 
 // CUSTOM
 #define CAPSWRD &caps_word
