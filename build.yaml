@@ -12,5 +12,5 @@
 #     shield: reviung41
 #
 ---
-board: nrfmicro_13
+board: [ "nrfmicro_13" ]
 shield: [ "corne_left", "corne_right", "settings_reset" ]
