@@ -8,7 +8,7 @@
 #define _NUMBER 3
 #define _ADJUST 4
 
-#define NAV    &mo _NAV
+#define NUMBER &mo _NUMBER
 #define SYMBOL &mo _SYMBOL
 #define ADJUST &mo _ADJUST
 
