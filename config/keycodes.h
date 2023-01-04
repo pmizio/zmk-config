@@ -3,9 +3,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // LAYERS
-#define LOWER  1
-#define RAISE  2
-#define ADJUST 3
+#define _NAV    1
+#define _SYMBOL 2
+#define _NUMBER 3
+#define _ADJUST 4
+
+#define NUMBER &mo _NUMBER
+#define SYMBOL &mo _SYMBOL
+#define ADJUST &mo _ADJUST
+
+#define NAV_SPC &lt _NAV SPACE
 
 // CUSTOM
 #define CAPSWRD &caps_word

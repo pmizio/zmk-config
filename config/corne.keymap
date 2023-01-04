@@ -27,8 +27,8 @@
   conditional_layers {
     compatible = "zmk,conditional-layers";
     tri_layer {
-      if-layers = <LOWER RAISE>;
-      then-layer = <ADJUST>;
+      if-layers = <_NUMBER _SYMBOL>;
+      then-layer = <_ADJUST>;
     };
   };
   
@@ -45,6 +45,16 @@
     ZMK_MACRO(ddash,
       bindings = <KC_MINUS KC_MINUS>;
     )
+    ZMK_MACRO(nword,
+      bindings = <&macro_press KC_LCTRL>
+               , <&macro_tap KC_RIGHT>
+               , <&macro_release KC_LCTRL>;
+    )
+    ZMK_MACRO(pword,
+      bindings = <&macro_press KC_LCTRL>
+               , <&macro_tap KC_LEFT>
+               , <&macro_release KC_LCTRL>;
+    )
   };
     
   keymap {
@@ -58,15 +68,15 @@
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_Z     KC_X     KC_C     KC_V     KC_B                          KC_N     KC_M     KC_COMMA KC_DOT   KC_FSLH  XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                       KC_BSPC &mo LOWER KC_SPACE    KC_RET  &mo RAISE KC_ESC
+                                       KC_BSPC  NUMBER   NAV_SPC     KC_RET   SYMBOL   KC_ESC
 //                                    `--------------------------'  `--------------------------'
       >;
     };
         
-    lower_layer {
+    nav_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     KC_N1    KC_N2    KC_N3    KC_N4    KC_N5                         KC_N6    KC_N7    KC_N8    KC_N9    KC_N0    XXXX
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     &pword   &nword   XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_LGUI  KC_RALT  KC_LCTRL KC_LSHFT XXXX                          KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
@@ -77,7 +87,7 @@
       >;
     };
 
-    raise_layer {
+    symbol_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    KC_GRAVE KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  &teq     XXXX     KC_PIPE
@@ -90,13 +100,27 @@
 //                                    `--------------------------'  `--------------------------'
       >;
     };
+
+    number_layer {
+      bindings = <
+//,-----------------------------------------------------.                    ,-----------------------------------------------------.
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     KC_N7    KC_N8    KC_N9    XXXX     XXXX
+//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          KC_N0    KC_N1    KC_N2    KC_N3    XXXX     XXXX
+//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          XXXX     KC_N4    KC_N5    KC_N6    XXXX     XXXX
+//|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+                                       ____     ____     ____        ____     ____     ____
+//                                    `--------------------------'  `--------------------------'
+      >;
+    };
         
     adjust_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    REBOOT   KC_F1    KC_F2    KC_F3    KC_F4    KC_F5                         KC_F6    KC_F7    KC_F8    KC_F9    KC_F10   KC_F11
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   BT__CLR  BT_SEL5   BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1                      XXXX     XXXX     XXXX     XXXX     XXXX     KC_F12
+   BT__CLR  BT_SEL5  BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1                       XXXX     XXXX     XXXX     XXXX     XXXX     KC_F12
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     USB_BT   XXXX     XXXX     XXXX     XXXX                          XXXX     XXXX     XXXX     XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
