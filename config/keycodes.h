@@ -12,7 +12,8 @@
 #define SYMBOL &mo _SYMBOL
 #define ADJUST &mo _ADJUST
 
-#define NAV_SPC &lt _NAV SPACE
+#define NAV_SPC &lt _NAV    SPACE
+#define SYM_TAB &lt _SYMBOL TAB
 
 // CUSTOM
 #define CAPSWRD &caps_word
@@ -105,6 +106,8 @@
 #define KC_SPACE &kp SPACE
 #define KC_TAB &kp TAB
 #define KC_SQT &kp SQT
+#define KC_SQT &kp SQT
+#define KC_DQT &kp DQT
 #define KC_STAR &kp STAR
 #define KC_UNDER &kp UNDER
 #define KC_TILDE &kp TILDE
