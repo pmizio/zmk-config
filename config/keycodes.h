@@ -7,6 +7,7 @@
 #define _SYMBOL 2
 #define _ADJUST 3
 
+#define NAV &mo _NAV
 #define SYMBOL &mo _SYMBOL
 #define ADJUST &mo _ADJUST
 
