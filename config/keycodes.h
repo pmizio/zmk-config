@@ -5,14 +5,12 @@
 // LAYERS
 #define _NAV    1
 #define _SYMBOL 2
-#define _NUMBER 3
-#define _ADJUST 4
+#define _ADJUST 3
 
-#define NUMBER &mo _NUMBER
+#define NAV &mo _NAV
 #define SYMBOL &mo _SYMBOL
 #define ADJUST &mo _ADJUST
 
-#define NAV_SPC &lt _NAV    SPACE
 #define SYM_TAB &lt _SYMBOL TAB
 
 // CUSTOM
