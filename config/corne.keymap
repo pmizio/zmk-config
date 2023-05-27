@@ -98,9 +98,9 @@
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    XXXX     KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  &teq     KC_BSLH  XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_SQT   KC_LBKT  KC_RBKT  KC_LPAR  KC_RPAR                       &farr    KC_EQUAL KC_MINUS KC_GRAVE KC_PIPE  XXXX
+   XXXX     KC_SQT   KC_LT    KC_LBKT  KC_LPAR  KC_LBRC                       &farr    KC_EQUAL KC_MINUS KC_GRAVE KC_PIPE  XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_DQT   KC_LT    KC_GT    KC_LBRC  KC_RBRC                       &tarr    KC_PLUS  &ddash   KC_TILDE XXXX     XXXX
+   XXXX     KC_DQT   KC_GT    KC_RBKT  KC_RPAR  KC_RBRC                       &tarr    KC_PLUS  &ddash   KC_TILDE XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                        ____     ____     KC_UNDER    ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
