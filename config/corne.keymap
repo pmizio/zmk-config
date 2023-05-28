@@ -57,15 +57,6 @@
       wait-ms = <10>;
       bindings = <KC_MINUS KC_GT>;
     )
-    ZMK_MACRO(teq,
-      wait-ms = <10>;
-      bindings = <KC_EQUAL KC_EQUAL KC_EQUAL>;
-    )
-    ZMK_MACRO(ddash,
-      wait-ms = <10>;
-      bindings = <KC_MINUS KC_MINUS>;
-    )
-
   };
     
   keymap {
@@ -93,7 +84,7 @@
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          CAPSWRD  XXXX     XXXX     XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                       ____     ____     ____        ____     ____     ____
+                                       KC_DEL   ____     ____        ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
       >;
     };
@@ -101,11 +92,11 @@
     symbol_layer {
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  &teq     KC_BSLH  XXXX
+   XXXX     KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  XXXX     KC_BSLH  XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_SQT   KC_LT    KC_LBKT  KC_LPAR  KC_LBRC                       &farr    KC_EQUAL KC_MINUS KC_GRAVE KC_PIPE  XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_DQT   KC_GT    KC_RBKT  KC_RPAR  KC_RBRC                       &tarr    KC_PLUS  &ddash   KC_TILDE XXXX     XXXX
+   XXXX     KC_DQT   KC_GT    KC_RBKT  KC_RPAR  KC_RBRC                       &tarr    KC_PLUS  XXXX     KC_TILDE XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                        ____     ____     KC_UNDER    ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
