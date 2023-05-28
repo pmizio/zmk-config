@@ -83,6 +83,7 @@
 #define KC_BSPC &kp BSPC
 #define KC_CARET &kp CARET
 #define KC_COMMA &kp COMMA
+#define KC_DEL &kp DEL
 #define KC_DLLR &kp DLLR
 #define KC_DOT &kp DOT
 #define KC_EQUAL &kp EQUAL
