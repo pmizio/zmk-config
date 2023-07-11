@@ -57,6 +57,15 @@
       wait-ms = <10>;
       bindings = <KC_MINUS KC_GT>;
     )
+    ZMK_MACRO(devtools,
+      wait-ms = <10>;
+      bindings
+          = <&macro_press KC_LGUI>
+          , <&macro_press KC_LSHFT>
+          , <&macro_tap KC_I>
+          , <&macro_release KC_LSHFT>
+          , <&macro_release KC_LGUI>;
+    )
   };
     
   keymap {
@@ -82,7 +91,7 @@
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
    XXXX     KC_LGUI  KC_RALT  KC_LCTRL KC_LSHFT XXXX                          KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX     XXXX     XXXX     XXXX                          CAPSWRD  XXXX     XXXX     XXXX     XXXX     XXXX
+   XXXX     XXXX     XXXX    &devtools XXXX     XXXX                          XXXX     CAPSWRD   XXXX     XXXX     XXXX     XXXX
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                        KC_DEL   ____     ____        ____     ____     ____
 //                                    `--------------------------'  `--------------------------'
