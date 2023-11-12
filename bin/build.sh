@@ -1,31 +1,19 @@
 #!/usr/bin/env bash
 
-declare -a SIDES=("left" "right")
+IFS=$'\n'
+for it in $(python3 ./bin/test.py); do
+  config=($it)
 
-for SIDE in ${SIDES[@]}; do
-  BOARD=corne_${SIDE}
+  IFS=' '
+  for shield in ${config[@]:1}; do
+    west build \
+      --pristine \
+      --source zmk/app \
+      --board "${config[@]:0:1}" \
+      -- \
+      -DSHIELD="$shield" \
+      -DZMK_CONFIG=/root/config
 
-  west build \
-    --pristine \
-    --source zmk/app \
-    --board nrfmicro_13 \
-    -- \
-    -DSHIELD="${BOARD}" \
-    -DZMK_CONFIG=/root/config
-
-  mv build/zephyr/zmk.uf2 "/firmware/${BOARD}.uf2"
-done
-
-for SIDE in ${SIDES[@]}; do
-  BOARD=lily58_${SIDE}
-
-  west build \
-    --pristine \
-    --source zmk/app \
-    --board nice_nano_v2 \
-    -- \
-    -DSHIELD="${BOARD}" \
-    -DZMK_CONFIG=/root/config
-
-  mv build/zephyr/zmk.uf2 "/firmware/${BOARD}.uf2"
+    mv build/zephyr/zmk.uf2 "/firmware/$shield.uf2"
+  done
 done
