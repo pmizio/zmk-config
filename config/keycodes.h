@@ -3,10 +3,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // LAYERS
-#define _NAV    1
-#define _SYMBOL 2
-#define _ADJUST 3
+#define _GAMING 1
+#define _NAV    2
+#define _SYMBOL 3
+#define _ADJUST 4
 
+#define GAMING &tog _GAMING
 #define NAV &mo _NAV
 #define SYMBOL &mo _SYMBOL
 #define ADJUST &mo _ADJUST
@@ -86,14 +88,18 @@
 #define KC_DEL &kp DEL
 #define KC_DLLR &kp DLLR
 #define KC_DOT &kp DOT
+#define KC_DQT &kp DQT
 #define KC_EQUAL &kp EQUAL
 #define KC_ESC &kp ESC
 #define KC_EXCL &kp EXCL
 #define KC_FSLH &kp FSLH
+#define KC_GRAVE &kp GRAVE
+#define KC_GT &kp GT
 #define KC_HASH &kp HASH
 #define KC_LBKT &kp LBKT
 #define KC_LBRC &kp LBRC
 #define KC_LPAR &kp LPAR
+#define KC_LT &kp LT
 #define KC_MINUS &kp MINUS 
 #define KC_PIPE &kp PIPE
 #define KC_PLUS &kp PLUS
@@ -102,17 +108,13 @@
 #define KC_RBRC &kp RBRC
 #define KC_RET &kp RET
 #define KC_RPAR &kp RPAR
+#define KC_SEMI &kp SEMI
 #define KC_SPACE &kp SPACE
-#define KC_TAB &kp TAB
 #define KC_SQT &kp SQT
-#define KC_SQT &kp SQT
-#define KC_DQT &kp DQT
 #define KC_STAR &kp STAR
-#define KC_UNDER &kp UNDER
+#define KC_TAB &kp TAB
 #define KC_TILDE &kp TILDE
-#define KC_GRAVE &kp GRAVE
-#define KC_GT &kp GT
-#define KC_LT &kp LT
+#define KC_UNDER &kp UNDER
 
 // F KEYS
 #define KC_F1 &kp F1

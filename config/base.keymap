@@ -1,0 +1,64 @@
+#include <behaviors.dtsi>
+#include "keycodes.h"
+
+&caps_word {
+  continue-list = <UNDERSCORE MINUS>;
+};
+
+/ {
+  behaviors {
+    hm: homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HOMEROW_MODS";
+      #binding-cells = <2>;
+      tapping-term-ms = <150>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+  };
+    
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+    tri_layer {
+      if-layers = <_NAV _SYMBOL>;
+      then-layer = <_ADJUST>;
+    };
+  };
+
+  dot: dot {
+    compatible = "zmk,behavior-mod-morph";
+    label = "DOT";
+    #binding-cells = <0>;
+    bindings = <KC_DOT>, <XXXX>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+
+  comma: comma {
+    compatible = "zmk,behavior-mod-morph";
+    label = "COMMA";
+    #binding-cells = <0>;
+    bindings = <KC_COMMA>, <XXXX>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+  };
+  
+  macros {
+    ZMK_MACRO(farr,
+      wait-ms = <10>;
+      bindings = <KC_EQUAL KC_GT>;
+    )
+    ZMK_MACRO(tarr,
+      wait-ms = <10>;
+      bindings = <KC_MINUS KC_GT>;
+    )
+    ZMK_MACRO(devtools,
+      wait-ms = <10>;
+      bindings
+          = <&macro_press KC_LGUI>
+          , <&macro_press KC_LSHFT>
+          , <&macro_tap KC_I>
+          , <&macro_release KC_LSHFT>
+          , <&macro_release KC_LGUI>;
+    )
+  };  
+};
