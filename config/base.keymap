@@ -1,10 +1,31 @@
 #include <behaviors.dtsi>
 #include "keycodes.h"
 
-#define TOP_ROW KC_Q   KC_W   KC_E   KC_R   KC_T      KC_Y   KC_U   KC_I   KC_O   KC_P    
-#define MID_ROW GUI_A  ALT_S  CTRL_D SHFT_F KC_G      KC_H   SHFT_J CTRL_K ALT_L  GUI_SEMI
-#define BOT_ROW KC_Z   KC_X   KC_C   KC_V   KC_B      KC_N   KC_M   &comma &dot   KC_FSLH 
-#define THUMB_ROW           KC_BSPC NAV KC_SPACE      KC_RET SYM_TAB KC_ESC
+/* DEFAULT LAYER */
+#define DEF_TOP_ROW       KC_Q     KC_W     KC_E     KC_R     KC_T        KC_Y     KC_U     KC_I     KC_O     KC_P    
+#define DEF_MID_ROW       GUI_A    ALT_S    CTRL_D   SHFT_F   KC_G        KC_H     SHFT_J   CTRL_K   ALT_L    GUI_SEMI
+#define DEF_BOT_ROW(L, R) KC_Z     KC_X     KC_C     KC_V     KC_B L    R KC_N     KC_M     &comma   &dot     KC_FSLH 
+#define DEF_THUMB_ROW                       KC_BSPC  NAV  KC_SPACE        KC_RET   SYM_TAB  KC_ESC
+
+
+/* NUMBER/NAV LAYER */
+#define NUM_TOP_ROW KC_N1    KC_N2    KC_N3    KC_N4    KC_N5       KC_N6    KC_N7    KC_N8    KC_N9    KC_N0   
+#define NUM_MID_ROW KC_LGUI  KC_RALT  KC_LCTRL KC_LSHFT XXXX        KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT XXXX    
+#define NUM_BOT_ROW XXXX     XXXX    &devtools XXXX     XXXX        XXXX     CAPSWRD   XXXX    XXXX     XXXX    
+#define NUM_THUMB_ROW                 KC_DEL   ____     ____        ____     ____     ____
+
+
+/* SYMBOL LAYER */
+#define SYM_TOP_ROW KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT    KC_CARET KC_AMPS  KC_STAR  XXXX     KC_BSLH 
+#define SYM_MID_ROW KC_SQT   KC_LT    KC_LBKT  KC_LPAR  KC_LBRC     &farr    KC_EQUAL KC_MINUS KC_GRAVE KC_PIPE 
+#define SYM_BOT_ROW KC_DQT   KC_GT    KC_RBKT  KC_RPAR  KC_RBRC     &tarr    KC_PLUS  XXXX     KC_TILDE XXXX    
+#define SYM_THUMB_ROW                 ____    ____      KC_UNDER    ____     ____     ____
+
+/* ADJUST LAYER */
+#define ADJ_TOP_ROW KC_F1    KC_F2    KC_F3    KC_F4    KC_F5       KC_F6    KC_F7    KC_F8    KC_F9    KC_F10  
+#define ADJ_TOP_ROW BT_SEL5  BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1     XXXX     XXXX     XXXX     XXXX     KC_F11  
+#define ADJ_TOP_ROW USB_BT   XXXX     XXXX     XXXX     REBOOT      REBOOT   BT__CLR  XXXX     XXXX     KC_F12  
+#define ADJ_TOP_ROW                   ____     ____     ____        ____     ____     ____
 
 &caps_word {
   continue-list = <UNDERSCORE MINUS>;
