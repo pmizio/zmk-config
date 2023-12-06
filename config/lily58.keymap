@@ -59,7 +59,7 @@
         XXXX ADJ_TOP_ROW XXXX
         XXXX ADJ_MID_ROW XXXX
         XXXX ADJ_BOT_ROW(XXXX, XXXX) XXXX
-        XXXX ____ ____ ____  ____ ____ ____ GAMING
+        XXXX ADJ_THUMB_ROW GAMING
       >;
     };
   };
