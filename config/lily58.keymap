@@ -2,16 +2,18 @@
 
 #include "base.keymap"
 
+#define EMPTY_ROW XXXX XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX XXXX
+
 / {
   keymap {
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-   XXXX XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX XXXX
-   XXXX DEF_TOP_ROW XXXX
-   XXXX DEF_MID_ROW XXXX
-   XXXX DEF_BOT_ROW(XXXX, XXXX) XXXX
-   XXXX DEF_THUMB_ROW XXXX
+        EMPTY_ROW
+        XXXX DEF_TOP_ROW XXXX
+        XXXX DEF_MID_ROW XXXX
+        XXXX DEF_BOT_ROW(XXXX, XXXX) XXXX
+        XXXX DEF_THUMB_ROW XXXX
       >;
     };
 
@@ -33,49 +35,31 @@
         
     num_nav_layer {
       bindings = <
-//,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     XXXX     XXXX     XXXX      XXXX     XXXX                          XXXX     XXXX    XXXX     XXXX     XXXX     XXXX
-//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_N1    KC_N2    KC_N3    KC_N4    KC_N5                         KC_N6    KC_N7    KC_N8    KC_N9    KC_N0    XXXX
-//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_LGUI  KC_RALT  KC_LCTRL KC_LSHFT XXXX                          KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT XXXX     XXXX
-//|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-   XXXX     XXXX     XXXX    &devtools XXXX     XXXX     XXXX         XXXX    XXXX     CAPSWRD   XXXX     XXXX    XXXX     XXXX
-//|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                              XXXX     KC_DEL   ____     ____        ____     ____     ____     XXXX
-//                           `----------------------------------'  `-----------------------------------'
+        EMPTY_ROW
+        XXXX NUM_TOP_ROW XXXX
+        XXXX NUM_MID_ROW XXXX
+        XXXX NUM_BOT_ROW(XXXX, XXXX) XXXX
+        XXXX NUM_THUMB_ROW XXXX
       >;
     };
 
     symbol_layer {
       bindings = <
-//,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     XXXX     XXXX     XXXX      XXXX     XXXX                          XXXX     XXXX    XXXX     XXXX     XXXX     XXXX
-//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_EXCL  KC_AT    KC_HASH  KC_DLLR  KC_PRCNT                      KC_CARET KC_AMPS  KC_STAR  XXXX     KC_BSLH  XXXX
-//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_SQT   KC_LT    KC_LBKT  KC_LPAR  KC_LBRC                       &farr    KC_EQUAL KC_MINUS KC_GRAVE KC_PIPE  XXXX
-//|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-   XXXX     KC_DQT   KC_GT    KC_RBKT  KC_RPAR  KC_RBRC  XXXX         XXXX    &tarr    KC_PLUS  XXXX     KC_TILDE XXXX     XXXX
-//|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                              XXXX     ____     ____     KC_UNDER    ____     ____     ____     XXXX
-//                           `--------------------------------------------'  `--------------------------'
+        EMPTY_ROW
+        XXXX SYM_TOP_ROW XXXX
+        XXXX SYM_MID_ROW XXXX
+        XXXX SYM_BOT_ROW(XXXX, XXXX) XXXX
+        XXXX SYM_THUMB_ROW XXXX
       >;
     };
         
     adjust_layer {
       bindings = <
-//,-----------------------------------------------------.                    ,-----------------------------------------------------.
-   XXXX     XXXX     XXXX     XXXX      XXXX     XXXX                          XXXX     XXXX    XXXX     XXXX     XXXX     XXXX
-//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     KC_F1    KC_F2    KC_F3    KC_F4    KC_F5                         KC_F6    KC_F7    KC_F8    KC_F9    KC_F10   XXXX
-//|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   XXXX     BT_SEL5  BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1                       XXXX     XXXX     XXXX     XXXX     KC_F11   XXXX
-//|--------+--------+--------+--------+--------+--------+--------|   |-------+--------+--------+--------+--------+--------+--------|
-   XXXX     USB_BT   XXXX     XXXX     XXXX     REBOOT   XXXX         XXXX    REBOOT   BT__CLR  XXXX     XXXX     KC_F12   XXXX
-//|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                              XXXX     ____     ____     ____        ____     ____     ____     GAMING
-//                           `--------------------------------------------'  `--------------------------'
+        EMPTY_ROW
+        XXXX ADJ_TOP_ROW XXXX
+        XXXX ADJ_MID_ROW XXXX
+        XXXX ADJ_BOT_ROW(XXXX, XXXX) XXXX
+        XXXX ____ ____ ____  ____ ____ ____ GAMING
       >;
     };
   };

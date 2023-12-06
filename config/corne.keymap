@@ -13,7 +13,7 @@
       bindings = <
         DEF_TOP_ROW
         DEF_MID_ROW
-        DEF_BOT_ROW
+        DEF_BOT_ROW()
         DEF_THUMB_ROW
       >;
     };
@@ -22,7 +22,7 @@
       bindings = <
         NUM_TOP_ROW
         NUM_MID_ROW
-        NUM_BOT_ROW
+        NUM_BOT_ROW()
         NUM_THUMB_ROW
       >;
     };
@@ -31,7 +31,7 @@
       bindings = <
         SYM_TOP_ROW
         SYM_MID_ROW
-        SYM_BOT_ROW
+        SYM_BOT_ROW()
         SYM_THUMB_ROW
       >;
     };
@@ -40,7 +40,7 @@
       bindings = <
         ADJ_TOP_ROW
         ADJ_MID_ROW
-        ADJ_BOT_ROW
+        ADJ_BOT_ROW()
         ADJ_THUMB_ROW
       >;
     };
