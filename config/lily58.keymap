@@ -10,10 +10,10 @@
     default_layer {
       bindings = <
         EMPTY_ROW
-        XXXX DEF_TOP_ROW XXXX
-        XXXX DEF_MID_ROW XXXX
-        XXXX DEF_BOT_ROW(XXXX, XXXX) XXXX
-        XXXX DEF_THUMB_ROW XXXX
+        XXXX DTR XXXX
+        XXXX DMR XXXX
+        XXXX DBR(XXXX, XXXX) XXXX
+        XXXX DTHR XXXX
       >;
     };
 
@@ -36,30 +36,30 @@
     num_nav_layer {
       bindings = <
         EMPTY_ROW
-        XXXX NUM_TOP_ROW XXXX
-        XXXX NUM_MID_ROW XXXX
-        XXXX NUM_BOT_ROW(XXXX, XXXX) XXXX
-        XXXX NUM_THUMB_ROW XXXX
+        XXXX NTR XXXX
+        XXXX NMR XXXX
+        XXXX NBR(XXXX, XXXX) XXXX
+        XXXX NTHR XXXX
       >;
     };
 
     symbol_layer {
       bindings = <
         EMPTY_ROW
-        XXXX SYM_TOP_ROW XXXX
-        XXXX SYM_MID_ROW XXXX
-        XXXX SYM_BOT_ROW(XXXX, XXXX) XXXX
-        XXXX SYM_THUMB_ROW XXXX
+        XXXX STR XXXX
+        XXXX SMR XXXX
+        XXXX SBR(XXXX, XXXX) XXXX
+        XXXX STHR XXXX
       >;
     };
         
     adjust_layer {
       bindings = <
         EMPTY_ROW
-        XXXX ADJ_TOP_ROW XXXX
-        XXXX ADJ_MID_ROW XXXX
-        XXXX ADJ_BOT_ROW(XXXX, XXXX) XXXX
-        XXXX ADJ_THUMB_ROW GAMING
+        XXXX ATR XXXX
+        XXXX AMR XXXX
+        XXXX ABR(XXXX, XXXX) XXXX
+        XXXX ATHR GAMING
       >;
     };
   };

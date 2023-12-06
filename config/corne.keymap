@@ -11,10 +11,10 @@
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        DEF_TOP_ROW
-        DEF_MID_ROW
-        DEF_BOT_ROW(,)
-        DEF_THUMB_ROW
+        DTR
+        DMR
+        DBR(,)
+        DTHR
       >;
     };
 
@@ -29,28 +29,28 @@
         
     num_nav_layer {
       bindings = <
-        NUM_TOP_ROW
-        NUM_MID_ROW
-        NUM_BOT_ROW(,)
-        NUM_THUMB_ROW
+        NTR
+        NMR
+        NBR(,)
+        NTHR
       >;
     };
 
     symbol_layer {
       bindings = <
-        SYM_TOP_ROW
-        SYM_MID_ROW
-        SYM_BOT_ROW(,)
-        SYM_THUMB_ROW
+        STR
+        SMR
+        SBR(,)
+        STHR
       >;
     };
         
     adjust_layer {
       bindings = <
-        ADJ_TOP_ROW
-        ADJ_MID_ROW
-        ADJ_BOT_ROW(,)
-        ADJ_THUMB_ROW
+        ATR
+        AMR
+        ABR(,)
+        ATHR
       >;
     };
   };
