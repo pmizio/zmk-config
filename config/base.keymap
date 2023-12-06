@@ -23,9 +23,9 @@
 
 /* ADJUST LAYER */
 #define ADJ_TOP_ROW       KC_F1    KC_F2    KC_F3    KC_F4    KC_F5       KC_F6    KC_F7    KC_F8    KC_F9    KC_F10  
-#define ADJ_TOP_ROW       BT_SEL5  BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1     XXXX     XXXX     XXXX     XXXX     KC_F11  
-#define ADJ_TOP_ROW(L, R) USB_BT   XXXX     XXXX     XXXX     REBOOT L  R REBOOT   BT__CLR  XXXX     XXXX     KC_F12  
-#define ADJ_TOP_ROW                         ____     ____     ____        ____     ____     ____
+#define ADJ_MID_ROW       BT_SEL5  BT_SEL4  BT_SEL3  BT_SEL2  BT_SEL1     XXXX     XXXX     XXXX     XXXX     KC_F11  
+#define ADJ_BOT_ROW(L, R) USB_BT   XXXX     XXXX     XXXX     REBOOT L  R REBOOT   BT__CLR  XXXX     XXXX     KC_F12  
+#define ADJ_THUMB_ROW                       ____     ____     ____        ____     ____     ____
 
 &caps_word {
   continue-list = <UNDERSCORE MINUS>;
