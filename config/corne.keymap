@@ -17,6 +17,15 @@
         DEF_THUMB_ROW
       >;
     };
+
+    gaming_layer {
+      bindings = <
+        XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
+        XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
+        XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
+                  XXXX XXXX XXXX  XXXX XXXX XXXX
+      >;
+    };
         
     num_nav_layer {
       bindings = <
