@@ -30,7 +30,10 @@
   };
 
   macros {
-    NUMLOCKED(1), NUMLOCKED(2), NUMLOCKED(3), NUMLOCKED(4),
+    NUMLOCKED(1)
+    NUMLOCKED(2)
+    NUMLOCKED(3)
+    NUMLOCKED(4)
     // ZMK_MACRO(numlocked_1,
     //  wait-ms = <10>;
     //  bindings
