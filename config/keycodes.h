@@ -116,7 +116,7 @@
 #define KC_TILDE &kp TILDE
 #define KC_UNDER &kp UNDER
 
-// F KEYS
+// FUNCTION KEYS
 #define KC_F1 &kp F1
 #define KC_F2 &kp F2
 #define KC_F3 &kp F3
@@ -129,6 +129,7 @@
 #define KC_F10 &kp F10
 #define KC_F11 &kp F11
 #define KC_F12 &kp F12
+#define KC_NLCK &kp NLCK
 
 // MODS
 #define KC_LGUI  &kp LGUI

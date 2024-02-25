@@ -63,4 +63,23 @@
       >;
     };
   };
+
+  combos {
+    compatible = "zmk,combos";
+      combo_numlocked_1 {
+        timeout-ms = <50>;
+        key-positions = <14 0>;
+        bindings = <&numlocked_1>;
+      };
+  };
+
+  macros {
+    ZMK_MACRO(numlocked_1,
+      wait-ms = <10>;
+      bindings
+          = <&macro_tap KP_NLCK>
+          , <&macro_tap KC_N1>
+          , <&macro_tap KP_NLCK>;
+    )
+  }; 
 };
