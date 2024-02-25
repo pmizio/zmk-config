@@ -129,7 +129,7 @@
 #define KC_F10 &kp F10
 #define KC_F11 &kp F11
 #define KC_F12 &kp F12
-#define KC_NLCK &kp NLCK
+#define KC_NLCK &kp KP_NLCK
 
 // MODS
 #define KC_LGUI  &kp LGUI

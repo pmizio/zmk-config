@@ -20,9 +20,9 @@
       wait-ms = <10>;
       bindings
           = <&macro_tap KC_NLCK>
-          , <&macro_press KC_N1>
+          , <&macro_press &kp KP_N1>
           , <&macro_tap KC_NLCK>
-          , <&macro_release KC_N1>
+          , <&macro_release &kp KP_N1>
           , <&macro_tap KC_NLCK>;
     )
   }; 
