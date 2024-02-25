@@ -4,7 +4,29 @@
 
 #define EMPTY_ROW XXXX XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX XXXX
 
-/ {
+/ {  
+  combos {
+    compatible = "zmk,combos";
+    combo_numlocked_1 {
+      layers = <_GAMING>;
+      timeout-ms = <50>;
+      key-positions = <1 43>;
+      bindings = <&numlocked_1>;
+    };
+  };
+
+  macros {
+    ZMK_MACRO(numlocked_1,
+      wait-ms = <10>;
+      bindings
+          = <&macro_tap KC_NLCK>
+          , <&macro_press &kp KP_N1>
+          , <&macro_tap KC_NLCK>
+          , <&macro_release &kp KP_N1>
+          , <&macro_tap KC_NLCK>;
+    )
+  };
+  
   keymap {
     compatible = "zmk,keymap";
     default_layer {
@@ -62,27 +84,5 @@
         XXXX ATHR GAMING
       >;
     };
-  };
-
-  combos {
-    compatible = "zmk,combos";
-    combo_numlocked_1 {
-      layers = <_GAMING>;
-      timeout-ms = <50>;
-      key-positions = <1 43>;
-      bindings = <&numlocked_1>;
-    };
-  };
-
-  macros {
-    ZMK_MACRO(numlocked_1,
-      wait-ms = <10>;
-      bindings
-          = <&macro_tap KC_NLCK>
-          , <&macro_press &kp KP_N1>
-          , <&macro_tap KC_NLCK>
-          , <&macro_release &kp KP_N1>
-          , <&macro_tap KC_NLCK>;
-    )
   }; 
 };
