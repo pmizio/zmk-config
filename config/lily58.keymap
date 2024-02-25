@@ -68,9 +68,11 @@
     ZMK_MACRO(numlocked_1,
       wait-ms = <10>;
       bindings
-          = <&macro_tap KP_NLCK>
-          , <&macro_tap KC_N1>
-          , <&macro_tap KP_NLCK>;
+          = <&macro_tap KC_NLCK>
+          , <&macro_press KC_N1>
+          , <&macro_tap KC_NLCK>
+          , <&macro_release KC_N1>
+          , <&macro_tap KC_NLCK>;
     )
   }; 
 
