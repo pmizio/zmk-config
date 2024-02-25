@@ -17,16 +17,10 @@
 / {  
   combos {
     compatible = "zmk,combos";
-    COMBO(numlocked_1, <1 41>, _GAMING, &numlocked_1)
-    COMBO(numlocked_2, <2 41>, _GAMING, &numlocked_2)
-    COMBO(numlocked_3, <3 41>, _GAMING, &numlocked_3)
-    COMBO(numlocked_4, <4 41>, _GAMING, &numlocked_4)
-    // combo_numlocked_1 {
-    //  layers = <_GAMING>;
-    //  timeout-ms = <50>;
-    //  key-positions = <1 43>;
-    //  bindings = <&numlocked_1>;
-    // };
+    COMBO(numlocked_1, <1 43>, _GAMING, &numlocked_1)
+    COMBO(numlocked_2, <2 43>, _GAMING, &numlocked_2)
+    COMBO(numlocked_3, <3 43>, _GAMING, &numlocked_3)
+    COMBO(numlocked_4, <4 43>, _GAMING, &numlocked_4)
   };
 
   macros {
@@ -34,14 +28,6 @@
     NUMLOCKED(2)
     NUMLOCKED(3)
     NUMLOCKED(4)
-    // ZMK_MACRO(numlocked_1,
-    //  wait-ms = <10>;
-    //  bindings
-    //      = <&macro_tap KC_NLCK>
-    //      , <&macro_press &kp KP_N1>
-    //      , <&macro_tap KC_NLCK>
-    //      , <&macro_release &kp KP_N1>;
-    // )
   };
 
   keymap {
