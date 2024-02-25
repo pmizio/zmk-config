@@ -27,6 +27,13 @@
 #define ABR(L, R) USB_BT   XXXX     XXXX     XXXX     REBOOT L  R REBOOT   BT__CLR  XXXX     XXXX     KC_F12  
 #define ATHR                        ____     ____     ____        ____     ____     ____
 
+#define COMBO(NAME, KEYPOS, LAYERS, BINDINGS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = KEYPOS; \
+    layers = <LAYERS>; \
+  };
+
 &caps_word {
   continue-list = <UNDERSCORE MINUS>;
 };
