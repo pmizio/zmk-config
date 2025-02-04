@@ -30,6 +30,9 @@
 #define ALT_L    &hm RALT  L
 #define GUI_SEMI &hm RGUI  SEMI
 
+// Combo-mods
+#define MEH_FSLH &hm LS(LC(LALT)) FSLH
+
 // SPECIAL
 #define XXXX &none
 #define ____ &trans
