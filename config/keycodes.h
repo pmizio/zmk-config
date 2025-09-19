@@ -32,7 +32,7 @@
 
 // Combo-mods
 #define MEH_FSLH &hm LS(LC(LALT)) FSLH
-#define MEH_KC_Z &hm LS(LC(LALT)) KC_Z
+#define MEH_Z    &hm LS(LC(LALT)) Z
 
 // SPECIAL
 #define XXXX &none
