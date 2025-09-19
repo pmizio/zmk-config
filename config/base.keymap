@@ -4,7 +4,7 @@
 /* DEFAULT LAYER */
 #define DTR       KC_Q     KC_W     KC_E     KC_R     KC_T        KC_Y     KC_U     KC_I     KC_O     KC_P    
 #define DMR       GUI_A    ALT_S    CTRL_D   SHFT_F   KC_G        KC_H     SHFT_J   CTRL_K   ALT_L    GUI_SEMI
-#define DBR(L, R) MEH_KC_Z KC_X     KC_C     KC_V     KC_B L    R KC_N     KC_M     &comma   &dot     MEH_FSLH 
+#define DBR(L, R) MEH_Z    KC_X     KC_C     KC_V     KC_B L    R KC_N     KC_M     &comma   &dot     MEH_FSLH 
 #define DTHR                        KC_BSPC  NAV  KC_SPACE        KC_RET   SYM_TAB  KC_ESC
 
 
