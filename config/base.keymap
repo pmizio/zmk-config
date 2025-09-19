@@ -11,7 +11,7 @@
 /* NUMBER/NAV LAYER */
 #define NTR       KC_N1    KC_N2    KC_N3    KC_N4    KC_N5       KC_N6    KC_N7    KC_N8    KC_N9    KC_N0   
 #define NMR       KC_LGUI  KC_RALT  KC_LCTRL KC_LSHFT XXXX        KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT XXXX    
-#define NBR(L, R) XXXX     XXXX    &devtools XXXX     XXXX L    R XXXX     CAPSWRD   XXXX    XXXX     XXXX    
+#define NBR(L, R) XXXX     XXXX    &devtools XXXX     XXXX L    R XXXX     CAPSWRD   XXXX    XXXX     KC_PSCRN    
 #define NTHR                        KC_DEL   ____     ____        ____     ____     ____
 
 
