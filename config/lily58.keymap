@@ -46,10 +46,10 @@
     symbol_layer {
       bindings = <
         EMPTY_ROW
-        XXXX STR XXXX
-        XXXX SMR XXXX
-        XXXX SBR(XXXX, XXXX) XXXX
-        XXXX STHR XXXX
+        XXXX    STR             XXXX
+        XXXX    SMR             XXXX
+        KC_LALT SBR(XXXX, XXXX) XXXX
+        XXXX    STHR            XXXX
       >;
     };
         
