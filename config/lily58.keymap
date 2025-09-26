@@ -8,6 +8,7 @@
   keymap {
     compatible = "zmk,keymap";
     default_layer {
+      display-name = "QWERTY";
       bindings = <
         EMPTY_ROW
         XXXX DTR XXXX
@@ -18,6 +19,7 @@
     };
 
     gaming_layer {
+      display-name = "GAMING";
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    KC_ESC   KC_N1    KC_N2    KC_N3    KC_N4    KC_N5                         KC_N6    KC_N7    KC_N8    KC_N9    KC_N0    KC_BSPC
@@ -34,6 +36,7 @@
     };
         
     num_nav_layer {
+      display-name = "NAVI";
       bindings = <
         EMPTY_ROW
         XXXX NTR XXXX
@@ -44,6 +47,7 @@
     };
 
     symbol_layer {
+      display-name = "SYMBOL";
       bindings = <
         EMPTY_ROW
         XXXX STR XXXX
@@ -54,6 +58,7 @@
     };
         
     adjust_layer {
+      display-name = "ADJUST";
       bindings = <
         EMPTY_ROW
         XXXX ATR XXXX

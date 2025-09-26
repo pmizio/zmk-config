@@ -9,8 +9,7 @@
 
   keymap {
     compatible = "zmk,keymap";
-    default_layer {
-      display-name = "QWERTY";
+    default_layer { 
       bindings = <
         DTR
         DMR
@@ -19,8 +18,7 @@
       >;
     };
 
-    gaming_layer {
-      display-name = "GAMING";
+    gaming_layer { 
       bindings = <
         XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
         XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
@@ -29,8 +27,7 @@
       >;
     };
         
-    num_nav_layer {
-      display-name = "NAV";
+    num_nav_layer { 
       bindings = <
         NTR
         NMR
@@ -39,8 +36,7 @@
       >;
     };
 
-    symbol_layer {
-      display-name = "SYMBOL";
+    symbol_layer { 
       bindings = <
         STR
         SMR
@@ -49,8 +45,7 @@
       >;
     };
         
-    adjust_layer {
-      display-name = "ADJUST";
+    adjust_layer { 
       bindings = <
         ATR
         AMR
