@@ -10,6 +10,7 @@
   keymap {
     compatible = "zmk,keymap";
     default_layer {
+      display-name = "QWERTY";
       bindings = <
         DTR
         DMR
@@ -19,6 +20,7 @@
     };
 
     gaming_layer {
+      display-name = "GAMING";
       bindings = <
         XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
         XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
@@ -28,6 +30,7 @@
     };
         
     num_nav_layer {
+      display-name = "NAV";
       bindings = <
         NTR
         NMR
@@ -37,6 +40,7 @@
     };
 
     symbol_layer {
+      display-name = "SYMBOL";
       bindings = <
         STR
         SMR
@@ -46,6 +50,7 @@
     };
         
     adjust_layer {
+      display-name = "ADJUST";
       bindings = <
         ATR
         AMR
