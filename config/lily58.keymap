@@ -41,7 +41,7 @@
         EMPTY_ROW
         XXXX NTR XXXX
         XXXX NMR XXXX
-        XXXX NBR(XXXX, XXXX) XXXX
+        XXXX NBR(XXXX, KC_PSCRN) XXXX
         XXXX NTHR XXXX
       >;
     };
