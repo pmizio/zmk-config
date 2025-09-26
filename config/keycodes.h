@@ -32,6 +32,7 @@
 
 // Combo-mods
 #define MEH_FSLH &hm LS(LC(LALT)) FSLH
+#define MEH_Z    &hm LS(LC(LALT)) Z
 
 // SPECIAL
 #define XXXX &none
@@ -142,6 +143,9 @@
 #define KC_RALT  &kp RALT
 #define KC_RCTRL &kp RCTRL
 #define KC_RSHFT &kp RSHFT
+
+// MEDIA KEYS
+#define KC_PSCRN &kp PSCRN
 
 // OUTPUTS
 #define USB_BT &out OUT_TOG
