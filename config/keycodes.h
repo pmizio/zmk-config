@@ -143,6 +143,7 @@
 #define KC_RALT  &kp RALT
 #define KC_RCTRL &kp RCTRL
 #define KC_RSHFT &kp RSHFT
+#define KC_MEH   &kp LS(LC(LALT))
 
 // MEDIA KEYS
 #define KC_PSCRN &kp PSCRN
