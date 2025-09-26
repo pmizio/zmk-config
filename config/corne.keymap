@@ -9,7 +9,7 @@
 
   keymap {
     compatible = "zmk,keymap";
-    default_layer {
+    default_layer { 
       bindings = <
         DTR
         DMR
@@ -18,7 +18,7 @@
       >;
     };
 
-    gaming_layer {
+    gaming_layer { 
       bindings = <
         XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
         XXXX XXXX XXXX XXXX XXXX  XXXX XXXX XXXX XXXX XXXX
@@ -27,7 +27,7 @@
       >;
     };
         
-    num_nav_layer {
+    num_nav_layer { 
       bindings = <
         NTR
         NMR
@@ -36,7 +36,7 @@
       >;
     };
 
-    symbol_layer {
+    symbol_layer { 
       bindings = <
         STR
         SMR
@@ -45,7 +45,7 @@
       >;
     };
         
-    adjust_layer {
+    adjust_layer { 
       bindings = <
         ATR
         AMR

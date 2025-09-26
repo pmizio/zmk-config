@@ -145,6 +145,9 @@
 #define KC_RSHFT &kp RSHFT
 #define KC_MEH   &kp LS(LC(LALT))
 
+// MEDIA KEYS
+#define KC_PSCRN &kp PSCRN
+
 // OUTPUTS
 #define USB_BT &out OUT_TOG
 
