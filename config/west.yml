@@ -6,14 +6,14 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
+    - name: pmizio
+      url-base: https://github.com/pmizio
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
     - name: zmk-dongle-display
-      remote: englmaxi
+      remote: pmizio
       revision: main
   self:
     path: config
