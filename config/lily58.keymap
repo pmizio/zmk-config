@@ -8,6 +8,7 @@
   keymap {
     compatible = "zmk,keymap";
     default_layer {
+      display-name = "QWERT";
       bindings = <
         EMPTY_ROW
         XXXX DTR XXXX
@@ -18,6 +19,7 @@
     };
 
     gaming_layer {
+      display-name = "GAME";
       bindings = <
 //,-----------------------------------------------------.                    ,-----------------------------------------------------.
    KC_ESC   KC_N1    KC_N2    KC_N3    KC_N4    KC_N5                         KC_N6    KC_N7    KC_N8    KC_N9    KC_N0    KC_BSPC
@@ -28,22 +30,24 @@
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
    KC_LGUI  KC_Z     KC_X     KC_C     KC_V     KC_B     KC_M        XXXX    KC_N     KC_M     KC_COMMA KC_DOT   KC_FSLH  KC_RGUI
 //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                              NAV      KC_TAB   KC_RALT  KC_SPACE    KC_RET   SYM_TAB  XXXX     XXXX
+                              NAV      KC_TAB   KC_LALT  KC_SPACE    KC_RET   SYM_TAB  XXXX     XXXX
 //                           `-----------------------------------'  `-----------------------------------'
       >;
     };
         
     num_nav_layer {
+      display-name = "NAV";
       bindings = <
         EMPTY_ROW
         XXXX NTR XXXX
         XXXX NMR XXXX
-        XXXX NBR(XXXX, XXXX) XXXX
+        XXXX NBR(XXXX, KC_PSCRN) XXXX
         XXXX NTHR XXXX
       >;
     };
 
     symbol_layer {
+      display-name = "SYM";
       bindings = <
         EMPTY_ROW
         XXXX STR XXXX
@@ -54,6 +58,7 @@
     };
         
     adjust_layer {
+      display-name = "ADJ";
       bindings = <
         EMPTY_ROW
         XXXX ATR XXXX
