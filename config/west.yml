@@ -1,6 +1,4 @@
 manifest:
-  defaults:
-    revision: v0.4
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -12,6 +10,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+      revision: main
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
